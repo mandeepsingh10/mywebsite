@@ -2,11 +2,6 @@ pipeline {
     agent any 
         
     stages{
-        stage('Fetch'){
-            steps{
-                git 'https://github.com/mandeepsingh10/mywebsite.git'
-            }
-        }
         stage('BUILD and RUN'){
             steps{
                 script{
